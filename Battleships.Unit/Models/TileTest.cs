@@ -49,7 +49,7 @@ public sealed class TileTest
             _console.Write(tile.Render());
 
             // Assert
-            Assert.Equal("X", _console.Output.NormalizeLineEndings());
+            Assert.Equal("!", _console.Output.NormalizeLineEndings());
         }
 
         [Fact]

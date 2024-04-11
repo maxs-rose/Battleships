@@ -10,7 +10,7 @@ public sealed record Tile(Position Position, bool IsHit, Ship? Ship)
     {
         var text = this switch
         {
-            { IsHit: true, Ship: not null } => "[bold red]X[/]",
+            { IsHit: true, Ship: not null } => "[bold red]![/]",
             { IsHit: true } => "[maroon]X[/]",
             { IsShip: true, Ship: not null } => debug
                 ? $"[green]{Ship.Type.ToString()[0]}[/]"
